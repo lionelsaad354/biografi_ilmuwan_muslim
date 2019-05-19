@@ -1,5 +1,6 @@
 package com.republikgaming.mengenalilmuwanmuslim;
 
+import android.annotation.SuppressLint;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
@@ -22,6 +23,7 @@ public class MainActivity extends AppCompatActivity {
         recyclerView = findViewById(R.id.recyclerview);
 
         Adapter adapter = new Adapter(this);
+
         recyclerView.setAdapter(adapter);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
     }
@@ -36,6 +38,7 @@ public class MainActivity extends AppCompatActivity {
                 .setMessage("Do You Want To Quit?")
                 .setCancelable(false)
                 .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+                    @SuppressLint("NewApi")
                     public void onClick(DialogInterface dialog, int id) {
                         finishAffinity();
                     }

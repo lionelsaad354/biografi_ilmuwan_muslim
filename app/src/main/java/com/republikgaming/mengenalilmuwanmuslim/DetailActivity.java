@@ -52,9 +52,6 @@ public class DetailActivity extends AppCompatActivity {
         tampilKarya.setText(tampilKaryaString);
         Bitmap bitmap = intent.getParcelableExtra("gambar");
         tampilIvy.setImageBitmap(bitmap);
-
-        tampilDeskripsi.setJustificationMode(Layout.JUSTIFICATION_MODE_INTER_WORD);
-        tampilDeskripsi2.setJustificationMode(Layout.JUSTIFICATION_MODE_INTER_WORD);
     }
 
     @Override

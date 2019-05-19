@@ -151,11 +151,7 @@ public class Adapter extends RecyclerView.Adapter<Adapter.RecyclerViewHolder> {
             wafat = itemView.findViewById(R.id.txt_wafat);
 
             relativeLayout.setClickable(true);
-            nama.setClickable(true);
-            gambar.setClickable(true);
             relativeLayout.setOnClickListener(this);
-            nama.setOnClickListener(this);
-            gambar.setOnClickListener(this);
         }
 
         @Override
